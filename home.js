@@ -103,6 +103,12 @@ app.post('/home',function(req,res){
 
 app.get('/config',function(req,res){
 
+  var userdata = fs.readFileSync('user.json');
+  var data = JSON.parse(userdata);
+  var init = data.init;
+
+   if(init === "faux")
+  {
 
 
      data = JSON.stringify(data);
@@ -116,33 +122,38 @@ app.get('/config',function(req,res){
 
      res.end();
 
+   }
+
+   else
+   {
+      res.redirect('/nowhere');
+   }
+
 });
 
 //  Check le formulaire et redirige
 app.post('/config',function(req,res){
 
+        var userdata = fs.readFileSync('user.json');
+        var data = JSON.parse(userdata);
+        var init = data.init;
+        var user = data.name;
+        var pass = data.pass;
+        var newPass = req.body.pass;
+        newPass = newPass.toLowerCase();
 
-      var userdata = fs.readFileSync('user.json');
-      var data = JSON.parse(userdata);
+         data.name = req.body.user;
+         data.pass = newPass;
+         data.init = "vrai";
 
-      var user = data.name;
-      var pass = data.pass;
-      var init = data.init;
+         data = JSON.stringify(data);
+
+         fs.writeFileSync('user.json',data);
+         fs.writeFileSync('user2.json', data);
+
+          res.redirect('/nowhere');
 
 
-      var newPass = req.body.pass;
-
-      newPass = newPass.toLowerCase();
-
-       data.name = req.body.user;
-       data.pass = newPass;
-       data.init = "vrai";
-
-       data = JSON.stringify(data);
-
-       fs.writeFileSync('user.json',data);
-       fs.writeFileSync('user2.json', data);
-       res.redirect('/nowhere');
 
 
 });
