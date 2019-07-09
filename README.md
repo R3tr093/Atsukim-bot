@@ -22,4 +22,6 @@
 
 <p> Tant que maintenant tu peux te rendre sur :: <a href="http://localhost:8080/home" target="_blank">http://localhost:8080/home</a> et te connecter  avec l'identifiant : <strong>guest</strong> et le mot de passe : <strong>secret</strong> </p> 
 
+<p><em> Note : Il faut restart le serveur node pour que les nouveaux identifiants soit pris en compte, donc après la config tu te log avec guest et secret, et dès que tu as relancer le serveur tu pourras te log avec les identifiants que tu as définis. ( Tu seras redirect sur nowhere, donc une erreur 404 et c'est normal j'ai pas encore coder le main environnement.)
+
 <p> Deuxième passe en cours... </p>
