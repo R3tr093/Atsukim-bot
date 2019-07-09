@@ -1,19 +1,13 @@
-
 {
-   "name": "atsukim-bot",
-   "version": "0.0.1",
-   "dependencies": {
-<<<<<<< HEAD
-    "morgan" : "~1.9.1",
-=======
-    "morgan" : "~1.9.1", 
->>>>>>> 7fd94b89c2f490e4b48625bb80a08bab397be9c7
-    "express": "~3.2.1",
-    "pug": "~2.0.4",
-    "body-parser": "~1.19.0",
-    "serve-favicon": "~2.5.0"
-  },
-    "author": "R3tr0",
-    "description": " Une version au format application web de Atsukim."
-
+ "name": "atsukim-bot",
+ "version": "0.0.1",
+ "dependencies": {
+  "morgan": "~1.9.1",
+  "express": "~3.2.1",
+  "pug": "~2.0.4",
+  "body-parser": "~1.19.0",
+  "serve-favicon": "~2.5.0"
+ },
+ "author": "R3tr0",
+ "description": " Une version au format application web de Atsukim."
 }
