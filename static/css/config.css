@@ -1,0 +1,74 @@
+#atsu
+{
+   margin-top: 75px;
+   margin-bottom: 25px;
+}
+
+#intro
+{
+  font-style: italic;
+  text-align: center;
+  font-family: Pacifico, cursive;
+  margin-top: 10px;
+}
+
+form
+{
+      display: inline-grid;
+}
+
+#myForm
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.formElts
+{
+   text-align: center;
+   margin-top: 25px;
+   margin-bottom: 25px;
+
+}
+
+.ipt
+{
+   min-width: 140px;
+   width: auto;
+   max-width: 175px;
+   margin: auto;
+   background: linear-gradient(21deg, #10abff, #1beabd);
+   padding: 3px;
+   padding-left: 10px;
+   border-radius: 9999em;
+   opacity: 1;
+   transform: scale(1);
+   font-family: 'Pacifico',cursive;
+   margin-bottom: 25px;
+
+}
+
+.hidden
+{
+  display: none;
+}
+
+#ok
+{
+      background : none;
+      border : none;
+      font-style: oblique;
+      color: goldenrod;
+      font-size: large;
+      width: 140px;
+      display: block;
+      margin: auto;
+
+}
+
+#ok:hover
+{
+      font-style: italic;
+
+}

@@ -1,0 +1,85 @@
+
+#date
+{
+  display: none;
+}
+
+#mainh1
+{
+   text-align: center;
+   font-family: 'Pacifico',cursive;
+   margin-top: 50px;
+   margin-bottom: 25px;
+   height: auto;
+}
+
+#atsu
+{
+   min-width: 180px;
+   margin-top: 15px;
+}
+
+form
+{
+      display: inline-grid;
+}
+
+#myForm
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ipt
+{
+   min-width: 140px;
+   width: auto;
+   max-width: 175px;
+   margin: auto;
+   background: linear-gradient(21deg, #10abff, #1beabd);
+   padding: 3px;
+   padding-left: 10px;
+   border-radius: 9999em;
+   opacity: 1;
+   transform: scale(1);
+   font-family: 'Pacifico',cursive;
+   margin-bottom: 25px;
+
+}
+
+.ipt:hover
+{
+   border: none;
+}
+
+
+.formElts
+{
+   text-align: center;
+
+}
+
+#logIn
+{
+  min-width: 140px;
+  width: auto;
+  max-width: 175px;
+  margin: auto;
+  margin-top: 25px;
+  background: cornflowerblue;
+  color: white;
+  padding: 3px;
+  padding-left: 10px;
+  border-radius: 12px;
+  opacity: 1;
+  transform: scale(1);
+  font-family: 'Pacifico',cursive;
+  margin-bottom: 25px;
+}
+#err
+{
+  text-align: center;
+  color: red;
+  font-style: italic;
+}

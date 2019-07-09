@@ -1,0 +1,28 @@
+doctype html
+html(lang='fr')
+ head
+   title Configuration
+   meta(charset='utf-8')
+   link(rel='stylesheet', href='/css/config.css', type='text/css')
+   link(rel='stylesheet', href='/css/animate.css', type='text/css')
+   link(href="/css/Bootstrap-4.3.1/css/bootstrap.min.css", type='text/css', rel='stylesheet')
+   link(href="https://fonts.googleapis.com/css?family=Muli|Pacifico&display=swap" rel="stylesheet")
+
+
+
+ body
+
+  img#atsu(src='/img/atsukim.png' class='rounded mx-auto d-block x-fluid')
+
+  p#intro(class='rollIn animated') C'est la première fois qu'on se rencontre, et si on faisait connaissance ?
+
+  div#myForm(class='col-10 offset-1')
+    form(action="/config" method="post" )
+      label(class='fadeInDown animated formElts' id='sugg') Votre nom ?
+      input(class='ipt fadeInDown animated ' id='inputElt' name='user' type="text" minlength="2" maxlength="14" value="..?" required)
+      input(class='ipt hidden ' id='birth'  name='birth' type="date"  required)
+      input(class='ipt hidden ' id='pass' name='pass' type="password" required)
+      button(id="ok") Ok
+
+
+script(src='../js/config.js')

@@ -1,0 +1,39 @@
+doctype html
+html(lang='fr')
+ head
+   title Atsukim bot
+   meta(charset='utf-8')
+   link(rel='stylesheet', href='/css/home.css', type='text/css')
+   link(rel='stylesheet', href='/css/animate.css', type='text/css')
+   link(href="/css/Bootstrap-4.3.1/css/bootstrap.min.css", type='text/css', rel='stylesheet')
+   link(href="https://fonts.googleapis.com/css?family=Muli|Pacifico&display=swap" rel="stylesheet")
+
+
+ body
+
+
+
+
+
+   div#main(class='col-10 offset-1')
+
+
+    h2#mainh1(class='bounceInDown animated') #{timed}
+
+
+     img#atsu(class='rounded mx-auto d-block x-fluid' src='/img/atsukim.png')
+
+
+
+    div#myForm(class='col-10 offset-1')
+      form(action="/home" method="post" )
+        label.formElts Identifiant :
+        input(class='ipt' name='user' type="text" minlength="2" required)
+        label.formElts Mot de passe :
+        input(class='ipt'  type='password' name='pass')
+        input(id='date' name='date')
+        button#logIn(type="submit") Connexion
+
+        p(id='err') #{err}
+
+script(src='../js/home.js')

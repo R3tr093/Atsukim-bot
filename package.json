@@ -1,0 +1,13 @@
+{
+   "name": "atsukim-bot",
+   "version": "0.0.1",
+   "dependencies": {
+    "express": "~3.2.1",
+    "pug": "~2.0.4",
+    "bodyParser": "~1.19.0",
+    "serve-favicon": "~2.5.0"
+  },
+    "author": "R3tr0",
+    "description": " Une version au format application web de Atsukim."
+
+}
