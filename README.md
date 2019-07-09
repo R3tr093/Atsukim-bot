@@ -4,9 +4,9 @@
 
 <p> Atsukim bot est un projet qui vise principalement à expérimenter Node.js </p>
 
-<p> C'est censé être une application web qui prend connaissances d'un utilisateur et l'accompagne dans la vie quotidienne </p>
+<p> C'est censé être une application web qui prend connaissance d'un utilisateur et l'accompagne dans la vie quotidienne </p>
 
-<p> Pour installer le projet il faut décompresser le fichier atsukim.zip, ensuite il suffit de se placer dans le dossier Atsukim depuis votre terminal et lancez la commande : <br><br><strong>npm install</strong> <br><br> Ceci en admettant que vous avez installer Node sur votre machine. </p>
+<p> Pour installer le projet, il suffit de se placer dans le dossier Atsukim depuis votre terminal et lancez la commande : <br><br><strong>npm install</strong> <br><br> Ceci en admettant que vous avez installer Node sur votre machine. </p>
 
 <p> Une fois l'installation des dépendances terminées, placez vous dans le dossier atsukim et lancez la commande : 
 <br><br>
