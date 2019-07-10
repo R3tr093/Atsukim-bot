@@ -67,7 +67,12 @@ app.get('/home',function(req,res){
 
 //  Check le formulaire et redirige
 app.post('/home',function(req,res){
+  var userdata = fs.readFileSync('user.json');
+  var data = JSON.parse(userdata);
 
+  var user = data.name;
+  var userPass = data.pass;
+  
      var pass= req.body.pass.toLowerCase();
      var name= req.body.user.toLowerCase();
 
