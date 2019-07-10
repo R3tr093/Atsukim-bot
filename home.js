@@ -87,7 +87,7 @@ app.post('/home',function(req,res){
 
         else
          {
-           res.redirect('/nowhere');
+           res.redirect('/atsukim');
          }
      }
 
@@ -100,6 +100,8 @@ app.post('/home',function(req,res){
           res.render('home.pug', {timed: text, err: "Mot de passe invalide"});
      }
 });
+
+// # BREAK  -> Go to config phase
 
 app.get('/config',function(req,res){
 
@@ -126,7 +128,7 @@ app.get('/config',function(req,res){
 
    else
    {
-      res.redirect('/nowhere');
+      res.redirect('/atsukim');
    }
 
 });
@@ -151,10 +153,28 @@ app.post('/config',function(req,res){
          fs.writeFileSync('user.json',data);
          fs.writeFileSync('user2.json', data);
 
-          res.redirect('/nowhere');
+          res.redirect('/atsukim');
 
 
 
+
+});
+
+
+// # BREAK -> got to Atsukim main
+
+app.get('/atsukim',function(req,res){
+
+    res.setHeader('Content-Type', 'text/html');
+    var userdata = fs.readFileSync('user.json');
+    var data = JSON.parse(userdata);
+
+    console.log(user)
+    var user = data.name;
+
+     res.render('atsukim.pug', {user: user});
+
+     res.end();
 
 });
 
