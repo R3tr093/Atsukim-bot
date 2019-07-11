@@ -1,5 +1,38 @@
+body
+{
+  background: url("/img/bck.png");
+  overflow: hidden;
+}
+#clock
+{
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   color: white;
+   font-style: oblique;
+   z-index: 50;
+   font-family: 'Press Start 2P', cursive;
+   letter-spacing: 3px;
+}
+
+#atsu
+{
+   margin-top: 60px;
+   margin-bottom: 15px;
+}
+
+#atsubot
+{
+  font-family: 'Chewy', cursive;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+}
+
 #atsuTxt
 {
    font-style: italic;
    text-align: center;
+   font-family: cursive;
+
 }

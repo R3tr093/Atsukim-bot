@@ -4,12 +4,17 @@ html(lang='fr')
    title Atsukim-bot
    meta(charset='utf-8')
    link(rel='stylesheet', href='/css/atsukim.css', type='text/css')
+   link(rel='stylesheet', href='/css/atsukimBubbles.css', type='text/css')
    link(rel='stylesheet', href='/css/animate.css', type='text/css')
-   link(href="/css/Bootstrap-4.3.1/css/bootstrap.min.css", type='text/css', rel='stylesheet')
+   link(href="/css/Bootstrap-4.3.1/css/bootstrap.css", type='text/css', rel='stylesheet')
    link(href="https://fonts.googleapis.com/css?family=Muli|Pacifico&display=swap" rel="stylesheet")
+   link(href="https://fonts.googleapis.com/css?family=Chewy|Press+Start+2P&display=swap" rel="stylesheet")
 
 
  body
+
+   div#clock 00:00
+
 
 
 
@@ -17,7 +22,24 @@ html(lang='fr')
 
    div#main(class='col-10 offset-1')
      img#atsu(class='rounded mx-auto d-block x-fluid' src='/img/atsukim.png')
-     h1#atsuTxt(class='bounceInDown animated') #{user}
+     h1#atsubot Atsukim-bot
+     h2#atsuTxt(class='bounceInDown animated') Salut #{user} ravie de te revoir !
+
+   div#background-wrap
+   figure#c1(class="circle")
+    a(href="#"  class="bubblesLinks") List
+
+   figure#c2(class="circle")
+    a(href="#" class="bubblesLinks") List2
+
+   figure#c3(class="circle")
+    a(href="#" class="bubblesLinks") List3
+
+   figure#c4(class="circle align-middle")
+    a(href="#" class="bubblesLinks") List4
+
+
+
 
 
 
