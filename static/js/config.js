@@ -71,7 +71,7 @@ conf.addEventListener('click',function(){
       {
 
 
-
+      document.getElementById("pass").value = "";
       document.getElementById("intro").textContent = " Une dernière étape, défini notre mot de passe : ";
 
       birth.className = "hidden";

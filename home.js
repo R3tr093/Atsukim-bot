@@ -33,7 +33,7 @@ on en crée une vide sous forme d'array avant la suite */
 /* On affiche la todolist et le formulaire */
 .get('/todo', function(req, res) {
     var test = 'test';
-    res.render('test.pug', {todolist: req.session.todolist});
+    res.render('todo.pug', {todolist: req.session.todolist});
 })
 
 /* On ajoute un élément à la todolist */
@@ -124,7 +124,17 @@ app.post('/home',function(req,res){
         if(data.init === "faux")
         {
           var meetDate = req.body.date;
+
           data.meetDate = meetDate;
+
+            console.log(data.meetDate)
+
+          var userdata = fs.readFileSync('user.json');
+
+          data = JSON.stringify(data);
+
+          fs.writeFileSync('user.json',data);
+
           res.redirect('/config');
 
         }

@@ -1,5 +1,5 @@
 {
-    "name": "ma-todolist",
+    "name": "Atsukim-bot",
     "version": "0.1.0",
     "dependencies": {
         "body-parser": "~1.10.1",
@@ -11,5 +11,5 @@
         "serve-favicon": "^2.5.0"
     },
     "author": "R3tr0",
-    "description": "Une todo list ultra basique."
+    "description": "Une version appliacation d'Atsukim."
 }

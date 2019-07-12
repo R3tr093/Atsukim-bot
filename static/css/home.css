@@ -1,4 +1,7 @@
-
+body
+{
+    background: url("/img/bck.png");
+}
 #date
 {
   display: none;
