@@ -1,0 +1,114 @@
+body
+{
+  margin: 0px;
+  padding: 0px;
+  background: url("/img/bck.png");
+}
+
+#clock
+{
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   color: white;
+   font-style: oblique;
+   z-index: 50;
+   font-family: 'Press Start 2P', cursive;
+   letter-spacing: 3px;
+}
+
+#wrapForm
+{
+  width: 100%;
+  padding-left: 10%;
+  margin-top: 70px;
+}
+
+#ask
+{
+    width: 30%;
+    color: white;
+    font-size : 28px;
+    text-shadow: 1px 1px 2px hotpink, 0 0 1em cornflowerblue, 0 0 0.2em cornflowerblue;
+    font-family: Kaushan Script, cursive;
+}
+
+#newtodo
+{
+
+  border-style: dashed double none;
+  border-color: antiquewhite;
+  border-width: 3px;
+  height: auto;
+  width: 30%;
+  background: url("/img/inputbck.png");
+  font-family: Shadows Into Light Two, monospace;
+  font-size: 20px;
+
+}
+
+#validateBtn
+{
+  background: url("/img/arrowDown.svg");
+  height: 30px;
+  width: 30px;
+  border:none;
+  vertical-align: middle;
+  line-height: 100%;
+  margin-left: 5%;
+
+}
+#validateBtn:hover
+{
+  transform: scale(1.4);
+}
+ul
+{
+    list-style: url('/img/list.png');
+    font-size: 28px;
+    display: block;
+    vertical-align: middle;
+    line-height: 100%;
+
+}
+
+li
+{
+  font-family: Permanent Marker, cursive;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+}
+
+.cross
+{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cross:hover
+{
+  text-decoration: none;
+  transform: scale(1.6);
+}
+
+
+#mainh1
+{
+  text-align: center;
+  color: cornflowerblue;
+  font-family: Kaushan Script, cursive;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+#listWrap
+{
+  margin-top: 50px;
+}
+.text
+{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

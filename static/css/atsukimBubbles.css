@@ -1,5 +1,26 @@
 .circle {
   display: block;
+  position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+  opacity: 0;
+  background: radial-gradient(circle at 50% 55%, rgba(240, 245, 255, 0.9), rgba(240, 245, 255, 0.9) 40%, rgba(225, 238, 255, 0.8) 60%, rgba(43, 130, 255, 0.4));
+
+  -webkit-animation: bubble-anim 2s ease-out infinite;
+
+  animation: bubble-anim 2s ease-out infinite;
+
+}
+.circle2 {
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 90%;
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -60,6 +81,7 @@
   display: flex;
   justify-content: center;
 }
+
 
 @keyframes bubble-anim {
   0% {

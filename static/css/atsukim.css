@@ -3,6 +3,7 @@ body
   background: url("/img/bck.png");
   overflow: hidden;
 }
+
 #clock
 {
    position: absolute;
